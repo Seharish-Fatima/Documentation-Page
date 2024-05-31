@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python</title>
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>Python For Beginners</h1>
+        <a href="#Introduction_To_Python" class="nav-link"
+          >Introduction To Python</a
+        >
+        <a href="#What_Are_Variables?" class="nav-link">What Are Variables?</a>
+        <a href="#Data_Types" class="nav-link">Data Types</a>
+        <a href="#Control_Flow" class="nav-link">Control Flow</a>
+        <a href="#Functions" class="nav-link">Functions</a>
+        <a href="#Basic_Libraries" class="nav-link">Basic Libraries</a>
+      </nav>
+    </header>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_To_Python">
+        <h3>Introduction To Python</h3>
+        <p>
+          Python is a popular programming language. It was created by Guido van
+          Rossum and released in 1991.
+        </p>
+        <p>It is used for:</p>
+        <ul>
+          <li>Web Applications</li>
+          <li>Desktop GUI Applications</li>
+          <li>Console-Based Applications</li>
+          <li>Data Analysis</li>
+          <li>Machine Learning</li>
+          <li>Artificial Intelligence</li>
+          <li>Cloud Computing</li>
+          <li>Software Development</li>
+          <li>Database Access</li>
+          <li>Games and 3D Graphics</li>
+        </ul>
+      </section>
+      <section class="main-section" id="What_Are_Variables?">
+        <h3>What Are Variables?</h3>
+        <p>
+          In Python, variables are used to store information that can be
+          referenced and manipulated in a program. A variable is created when
+          you assign a value to it. Python variables do not require explicit
+          declaration to reserve memory space; the declaration happens
+          automatically when you assign a value to a variable.
+        </p>
+
+        <p>For example:</p>
+        <code class="ide">
+          x = 5<br />
+          y = "Hello, World!"
+        </code>
+
+        <p>
+          In the above example, <code>x</code> is a variable assigned the
+          integer value <code>5</code>, and <code>y</code> is a variable
+          assigned the string value <code>"Hello, World!"</code>.
+        </p>
+
+        <p>Variables in Python have the following characteristics:</p>
+        <ul>
+          <li>
+            Variables do not need to be declared with any particular type, and
+            they can even change type after they have been set.
+          </li>
+          <li>
+            Variable names must start with a letter or an underscore, and can
+            contain letters, numbers, and underscores.
+          </li>
+          <li>
+            Variable names are case-sensitive (e.g., <code>age</code> and
+            <code>Age</code> are two different variables).
+          </li>
+        </ul>
+
+        <p>Here are some more examples of valid variable assignments:</p>
+        <code class="ide">
+          name = "Alice"<br />
+          age = 30<br />
+          is_student = True<br />
+          height = 5.9<br />
+          skills = ["Python", "Data Analysis", "Machine Learning"]
+        </code>
+
+        <p>
+          Remember, you can always reassign a variable to a new value, and the
+          type of the variable can change based on the value you assign:
+        </p>
+        <code class="ide">
+          number = 10 # initially an integer<br />
+          number = "ten" # now a string
+        </code>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <h3>Data Types</h3>
+        <p>
+          In Python, data types are used to classify one particular type of
+          data. This is important because it helps the interpreter or compiler
+          understand how the programmer intends to use the data. Python provides
+          several built-in data types, including the following:
+        </p>
+
+        <ul>
+          <li>
+            <code>int</code> - Integer type, representing whole numbers, e.g.,
+            <code>10</code>, <code>-3</code>
+          </li>
+          <li>
+            <code>float</code> - Floating-point type, representing real numbers
+            with decimal points, e.g., <code>3.14</code>, <code>-2.7</code>
+          </li>
+          <li>
+            <code>str</code> - String type, representing sequences of
+            characters, e.g., <code>"Hello"</code>, <code>'Python'</code>
+          </li>
+          <li>
+            <code>bool</code> - Boolean type, representing truth values, either
+            <code>True</code> or <code>False</code>
+          </li>
+          <li>
+            <code>list</code> - List type, representing ordered collections of
+            items, e.g., <code>[1, 2, 3],</code>
+            <code>["apple", "banana", "cherry"]</code>
+          </li>
+          <li>
+            <code>tuple</code> - Tuple type, representing ordered, immutable
+            collections of items, e.g., <code>(1, 2, 3),</code>
+            <code>("red", "green", "blue")</code>
+          </li>
+          <li>
+            <code>dict</code> - Dictionary type, representing collections of
+            key-value pairs, e.g., <code>{"name": "Alice", "age": 25}</code>
+          </li>
+          <li>
+            <code>set</code> - Set type, representing unordered collections of
+            unique items, e.g., <code>{"apple", "banana", "cherry"}</code>
+          </li>
+        </ul>
+
+        <p>
+          Here are some examples of variable assignments for each data type:
+        </p>
+        <code class="ide">
+          # Integer<br />
+          age = 25<br /><br />
+
+          # Float<br />
+          pi = 3.14159<br /><br />
+
+          # String<br />
+          greeting = "Hello, World!"<br /><br />
+
+          # Boolean<br />
+          is_active = True<br /><br />
+
+          # List<br />
+          fruits = ["apple", "banana", "cherry"]<br /><br />
+
+          # Tuple<br />
+          colors = ("red", "green", "blue")<br /><br />
+
+          # Dictionary<br />
+          person = {"name": "Alice", "age": 25}<br /><br />
+
+          # Set<br />
+          unique_numbers = {1, 2, 3, 4, 5}
+        </code>
+
+        <p>
+          Python's dynamic typing allows you to change the type of a variable by
+          assigning a new value of a different type:
+        </p>
+        <code class="ide">
+          value = 42 # value is an integer<br />
+          value = 42.0 # now value is a float<br />
+          value = "forty-two" # now value is a string
+        </code>
+
+        <p>
+          Understanding and using these data types effectively is essential for
+          writing robust and efficient Python programs.
+        </p>
+      </section>
+      <section class="main-section" id="Control_Flow">
+        <h3>Control Flow</h3>
+        <p>
+          Control flow in Python refers to the order in which individual
+          statements, instructions, or function calls are executed or evaluated.
+          Python provides several control flow tools to help manage the flow of
+          execution in a program. These include conditional statements, loops,
+          and control flow statements.
+        </p>
+
+        <h4>Conditional Statements</h4>
+        <p>
+          Conditional statements allow you to execute certain pieces of code
+          based on whether a condition is true or false. The main conditional
+          statements in Python are <code>if</code>, <code>elif</code> and
+          <code>else</code>
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          age = 20<br /><br />
+
+          if age >= 18:<br />
+          print("You are an adult.")<br />
+          elif age >= 13:<br />
+          print("You are a teenager.")<br />
+          else:<br />
+          print("You are a child.")
+        </code>
+
+        <h4>Loops</h4>
+        <p>
+          Loops allow you to repeat a block of code multiple times. Python
+          provides two types of loops: <code>for</code> and
+          <code>while</code> loops.
+        </p>
+
+        <h5>For Loops</h5>
+        <p>
+          <code>for</code> loop is used to iterate over a sequence (such as a
+          list, tuple, dictionary, set, or string) with the following syntax:
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          fruits = ["apple", "banana", "cherry"]<br />
+          for fruit in fruits:<br />
+          print(fruit)
+        </code>
+
+        <h5>While Loops</h5>
+        <p>
+          A <code>while</code> loop repeatedly executes a block of code as long
+          as a condition is true. The syntax is:
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          count = 0<br />
+          while count < 5:<br />
+          print(count)<br />
+          count += 1
+        </code>
+
+        <h4>Control Flow Statements</h4>
+        <p>
+          Python includes several statements that alter the flow of control:
+        </p>
+        <ul>
+          <li>
+            <code>break</code> - Exits the nearest enclosing loop prematurely.
+          </li>
+          <li>
+            <code>continue</code> - Skips the rest of the current loop iteration
+            and proceeds to the next iteration.
+          </li>
+          <li>
+            <code>pass</code> - A null statement that does nothing; it can be
+            used as a placeholder.
+          </li>
+        </ul>
+
+        <p>Examples:</p>
+        <code class="ide">
+          # Using break<br />
+          for i in range(10):<br />
+          if i == 5:<br />
+          break<br />
+          print(i)<br /><br />
+
+          # Using continue<br />
+          for i in range(10):<br />
+          if i % 2 == 0:<br />
+          continue<br />
+          print(i)<br /><br />
+
+          # Using pass<br />
+          for i in range(5):<br />
+          if i == 3:<br />
+          pass<br />
+          print(i)
+        </code>
+
+        <p>
+          Understanding and using control flow tools effectively allows you to
+          write more flexible and dynamic programs.
+        </p>
+      </section>
+      <section class="main-section" id="Funtions">
+        <h3>Functions</h3>
+        <p>
+          Functions in Python are reusable blocks of code designed to perform a
+          specific task. Functions help in organizing code, making it more
+          readable, and reducing redundancy. You can define your own functions
+          or use built-in functions provided by Python.
+        </p>
+
+        <h4>Defining Functions</h4>
+        <p>
+          Functions are defined using the <code>def</code> keyword, followed by
+          the function name, parentheses, and a colon. The body of the function
+          contains the code to be executed and is indented. You can also define
+          parameters within the parentheses to pass data to the function.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          def greet(name):<br />
+          return f"Hello, {name}!"<br /><br />
+
+          message = greet("Alice")<br />
+          print(message) # Output: Hello, Alice!
+        </code>
+
+        <h4>Function Parameters</h4>
+        <p>
+          Functions can take parameters, which are specified within the
+          parentheses in the function definition. Parameters allow you to pass
+          values to the function, making it more flexible.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          def add(a, b):<br />
+          return a + b<br /><br />
+
+          result = add(5, 3)<br />
+          print(result) # Output: 8
+        </code>
+
+        <h4>Default Parameters</h4>
+        <p>
+          You can provide default values for parameters. If no value is passed
+          for a parameter with a default value, the default value is used.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          def greet(name="World"):<br />
+          return f"Hello, {name}!"<br /><br />
+
+          print(greet()) # Output: Hello, World!<br />
+          print(greet("Bob")) # Output: Hello, Bob!
+        </code>
+
+        <h4>Returning Values</h4>
+        <p>
+          Functions can return values using the <code>return</code> statement.
+          Once the <code>return</code> statement is executed, the function
+          terminates, and the specified value is returned to the caller.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          def square(x):<br />
+          return x * x<br /><br />
+
+          result = square(4)<br />
+          print(result) # Output: 16
+        </code>
+
+        <h4>Lambda Functions</h4>
+        <p>
+          Python also supports anonymous functions, known as lambda functions.
+          These are small, single-line functions that are defined using the
+          <code>lambda</code> keyword.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          square = lambda x: x * x<br />
+          print(square(5)) # Output: 25
+        </code>
+
+        <h4>Built-in Functions</h4>
+        <p>
+          Python provides a rich set of built-in functions that you can use
+          without needing to define them yourself. Some common built-in
+          functions include <code>print()</code>, <code>len()</code>,
+          <code>type()</code>, and <code>range()</code>.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          print(len("Hello")) # Output: 5<br />
+          print(type(42)) # Output: <class 'int'><br />
+          print(list(range(5))) # Output: [0, 1, 2, 3, 4]
+        </code>
+
+        <p>
+          Understanding and using functions effectively is crucial for writing
+          clean, efficient, and reusable code in Python.
+        </p>
+      </section>
+      <section class="main-section" id="Basic_Libraries">
+        <h3>Basic Libraries</h3>
+        <p>
+          Python comes with a vast standard library and many third-party
+          libraries that provide additional functionality. These libraries make
+          Python a powerful and versatile programming language. Below are some
+          of the most commonly used libraries for basic tasks:
+        </p>
+
+        <h4>NumPy</h4>
+        <p>
+          NumPy (Numerical Python) is a library used for working with arrays. It
+          also provides functions for performing mathematical operations on
+          arrays. NumPy is essential for scientific computing and data analysis.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          import numpy as np<br /><br />
+
+          array = np.array([1, 2, 3, 4, 5])<br />
+          print(array)<br />
+          print(np.mean(array)) # Output: 3.0
+        </code>
+
+        <h4>Pandas</h4>
+        <p>
+          Pandas is a library used for data manipulation and analysis. It
+          provides data structures like DataFrames, which make it easy to work
+          with structured data.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          import pandas as pd<br /><br />
+
+          data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}<br />
+          df = pd.DataFrame(data)<br />
+          print(df)<br />
+          print(df['Age'].mean()) # Output: 30.0
+        </code>
+
+        <h4>Matplotlib</h4>
+        <p>
+          Matplotlib is a plotting library used for creating static, animated,
+          and interactive visualizations in Python. It is widely used for data
+          visualization.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          import matplotlib.pyplot as plt<br /><br />
+
+          x = [1, 2, 3, 4, 5]<br />
+          y = [2, 3, 5, 7, 11]<br />
+          plt.plot(x, y)<br />
+          plt.xlabel('X Axis')<br />
+          plt.ylabel('Y Axis')<br />
+          plt.title('Sample Plot')<br />
+          plt.show() #Output:
+        </code>
+        <img src="plot.png" alt="Plot" />
+
+        <h4>Requests</h4>
+        <p>
+          Requests is a library used for making HTTP requests in Python. It is
+          simple and easy to use, making it a popular choice for interacting
+          with web APIs.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          import requests<br /><br />
+
+          response = requests.get('https://api.github.com')<br />
+          print(response.status_code)<br />
+          print(response.json())
+        </code>
+
+        <h4>Beautiful Soup</h4>
+        <p>
+          Beautiful Soup is a library used for web scraping purposes to pull
+          data out of HTML and XML files. It provides Pythonic idioms for
+          iterating, searching, and modifying the parse tree.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          from bs4 import BeautifulSoup<br /><br />
+
+          html_doc = '&lt;html&gt;&lt;head&gt;&lt;title&gt;Sample
+          Page&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Hello,
+          World!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;'<br />
+          soup = BeautifulSoup(html_doc, 'html.parser')<br />
+          print(soup.title.string) # Output: Sample Page
+        </code>
+
+        <h4>SQLAlchemy</h4>
+        <p>
+          SQLAlchemy is a SQL toolkit and Object-Relational Mapping (ORM)
+          library for Python. It provides a full suite of well-known
+          enterprise-level persistence patterns.
+        </p>
+        <p>Example:</p>
+        <code class="ide">
+          from sqlalchemy import create_engine, MetaData, Table, Column,
+          Integer, String<br />
+          from sqlalchemy.orm import sessionmaker<br /><br />
+
+          engine = create_engine('sqlite:///:memory:')<br />
+          metadata = MetaData()<br />
+          users = Table('users', metadata,<br />
+          Column('id', Integer, primary_key=True),<br />
+          Column('name', String),<br />
+          Column('age', Integer))<br />
+          metadata.create_all(engine)<br />
+          Session = sessionmaker(bind=engine)<br />
+          session = Session()<br />
+          session.add_all([<br />
+          {'name': 'Alice', 'age': 25},<br />
+          {'name': 'Bob', 'age': 30},<br />
+          {'name': 'Charlie', 'age': 35}<br />
+          ])<br />
+          session.commit()<br />
+          result = session.query(users).all()<br />
+          for row in result:<br />
+          print(row)
+        </code>
+
+        <p>
+          These libraries are just the tip of the iceberg. Python's ecosystem is
+          rich with libraries for virtually every application, making it a
+          versatile choice for developers.
+        </p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
